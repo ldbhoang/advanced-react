@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import Header from './Header';
 import Meta from './Meta';
@@ -43,22 +43,23 @@ injectGlobal`
     margin: 0;
     font-size: 1.5rem;
     line-height: 2;
-    font-family: 'radnika_next';  
+    font-family: 'radnika_next';
   }
   a {
     text-decoration: none;
     color: ${theme.black};
   }
+  button {  font-family: 'radnika_next'; }
 `;
 
-class Page extends React.Component {
+class Page extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
         <StyledPage>
-        <Meta />
-        <Header />
-        <Inner>{this.props.children}</Inner>
+          <Meta />
+          <Header />
+          <Inner>{this.props.children}</Inner>
         </StyledPage>
       </ThemeProvider>
     );
