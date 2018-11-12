@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
+import SingleItem from '../components/SingleItem';
 
-class Item extends Component {
-  render() {
-    return (
-      <div>
-        Item page
-      </div>
-    );
-  }
-}
+const Item = props => (
+  <div>
+    <SingleItem id={props.query.id} />
+  </div>
+)
 
 export default Item;

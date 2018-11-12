@@ -5706,7 +5706,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/hoangle/Documents/Code/study/Advanced-React-master/sick-fits/frontend/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "D:\\3-Work\\GIT\\advanced-react\\frontend\\.next");
       return error;
     }
   };
@@ -17966,7 +17966,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/hoangle/Documents/Code/study/Advanced-React-master/sick-fits/frontend/node_modules/next/dist/client/next-dev */"./node_modules/next/dist/client/next-dev.js");
+module.exports = __webpack_require__(/*! D:\3-Work\GIT\advanced-react\frontend\node_modules\next\dist\client\next-dev */"./node_modules/next/dist/client/next-dev.js");
 
 
 /***/ }),
